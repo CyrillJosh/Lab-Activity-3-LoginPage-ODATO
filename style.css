@@ -1,62 +1,50 @@
-body {
-    background-image: url("Space-bg.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
+* {
     font-family: Helvetica, sans-serif;
-}
-.div-centered {
-    vertical-align: middle;
-    background-color: rgba(1, 4, 47, 0.511);
-    border-radius: 5vh;
-    border: 3px solid white;
-    min-height: 50vh;
-    min-width: 50vh;
-    max-width: 70vh;
-    max-height: 70vh;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100px;
+    box-sizing: border-box;
+    border: 0;
 }
 
-form {
-    text-align: center;
+h1, a, p {
     color: white;
-    height: 100%;
-    width: 100%;
+    text-align: center;
+}
+
+body {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.child-container {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.parent-container {
+    border-radius: 15px;
+    height: 350px;
+    width: 300px;
 }
 
 input {
-    margin-bottom: 10px;
-    height: 4vh;
-    width: 30vh;
-}
-label {
-    font-size: 4vh;
+    width: 100%;
+    margin: 10px 0;
+    padding: 7px;
+    font-size: 15px;
+    border-radius: 7px;
 }
 
 button {
-    margin-top: 10px;
-    border-radius: 5vh;
-    border: 3px solid white;
-    background-color: white;
-    width: 50%;
-    height: 50%;
-    font-family: Helvetica, sans-serif;
-    font-size: 3vh;
-}
-
-p, a {
-    color: inherit;
-    font-size: 2vh;
+    margin: 10px 0;
+    border-radius: 7px;
+    width: 100%;
+    padding: 2%;
+    font-size: large;
+    cursor: pointer;
 }
