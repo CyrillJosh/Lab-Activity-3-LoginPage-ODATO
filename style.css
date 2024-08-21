@@ -1,20 +1,16 @@
-* {
-    font-family: Helvetica, sans-serif;
-    box-sizing: border-box;
-    border: 0;
+h1 {
+    margin: 10px;
 }
-
-h1, a, p {
-    color: white;
-    text-align: center;
+a , p {
+    font-size: 13px;
 }
-
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
+    background: url("horizon-bg.jpeg") ;
 }
 
 .child-container {
@@ -24,27 +20,98 @@ body {
     align-items: center;
     justify-content: space-evenly;
     padding: 30px;
+    height: 100%;
+    padding-top: 15px;
 }
 
 .parent-container {
     border-radius: 15px;
-    height: 350px;
-    width: 300px;
+    height: 400px;
+    width: 350px;
+    border: 2px solid white;
+    backdrop-filter: blur(25px);
+}
+
+.design {
+    position: absolute;
+    backdrop-filter: brightness(60%);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.trademark {
+    position: absolute;
+    top: 90%;
+    left: 95%;
+    font-size: 2vh;
 }
 
 input {
     width: 100%;
     margin: 10px 0;
-    padding: 7px;
+    padding: 7px 20px;
     font-size: 15px;
-    border-radius: 7px;
+    border-radius: 20px;
+    text-align: start;
+    height: 35px;
+    outline: none;
+}
+
+input:hover, input:focus, button:hover, button:focus{
+    box-shadow: 0px 0px 10px rgba(81, 203, 238, 1);
+    outline: 1px solid rgba(81, 203, 238, 1);
+}
+.parent-container:focus-within {
+    pointer-events: none;
+}
+
+input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    outline: none;
+    box-shadow: none;
+    appearance: auto;
+    cursor: pointer;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 0px 10px;
+}
+label {
+    left: 55px;
+    cursor: pointer;
 }
 
 button {
+    font-size: 15px;
     margin: 10px 0;
-    border-radius: 7px;
+    border-radius: 20px;
     width: 100%;
-    padding: 2%;
-    font-size: large;
+    padding: 3%;
     cursor: pointer;
+    color: white;
+    background: linear-gradient(145deg, yellow, orange, salmon);
+    height: 35px;
+}
+
+.forgot-password {
+    position: absolute;
+    right: 40px;
+}
+
+* {
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    border: 0;
+    text-align: center;
+    color: white;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
